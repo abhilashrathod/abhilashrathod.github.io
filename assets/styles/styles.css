@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url(../fonts/Product-Sans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    src: url(../fonts/Product-Sans-Bold.ttf) format("truetype");
+}
+
+/* DEFAULT VALUES */
+
+:root {
+    --text-primary: #000;
+    --text-secondary: #0068ff;
+
+    --font-regular: 'Product Sans Regular';
+    --font-bold: 'Product Sans Bold';
+}
+
+/* STYLES */
+
+html, body {
+    font-family: var(--font-regular);
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100vh;
+    align-items: center;
+}
+
+.main-box {
+    grid-column: 2/4;
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    transition: 0.5s all ease;
+    -webkit-box-shadow: 10px 9px 35px -19px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 10px 9px 35px -19px rgba(0, 0, 0, 0.52);
+    box-shadow: 10px 9px 35px -19px rgba(0, 0, 0, 0.52);
+}
+
+.main-box:hover {
+   border: 1px solid #ccc;
+}
+
+.welcome-text {
+    font-size: 56px;
+    letter-spacing: -1px;
+}
+
+.highlighted {
+    color: var(--text-secondary);
+}
