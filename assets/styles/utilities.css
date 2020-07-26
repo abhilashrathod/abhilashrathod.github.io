@@ -1,3 +1,17 @@
 .text-uppercase {
     text-transform: uppercase;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* MARGIN AND PADDING */
+
+.m-t-0 {
+    margin-top: 0;
+}
