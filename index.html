@@ -11,21 +11,32 @@
 
   <link href="assets/libs/scrolling/locomotive-scroll.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174902987-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-174902987-1');
+  </script>
 </head>
 <body data-scroll-container>
 
 <div class="main-container">
+
   <header data-scroll-section>
     <div class="logo-section">
-      <span class="highlighted">Abhilash</span> Rathod
+      <span class="highlighted"><svg class="text-accent" viewBox="0 0 292.715 292.715" width="36px"
+                                     xmlns="http://www.w3.org/2000/svg"><path
+          d="M272.715 292.324H20a19.999 19.999 0 01-17.876-28.967L128.48 11.424a20 20 0 0135.754 0l126.357 251.933a20.002 20.002 0 01-17.876 28.967zm-220.31-40H240.31L146.357 65.001 52.405 252.324z"/></svg></span>
     </div>
     <div class="navigation-section">
       <nav>
         <ul>
-          <li><a href="javascript:void(0);">Home</a></li>
+          <li><a class="highlighted" href="javascript:void(0);">Home</a></li>
           <li><a href="javascript:void(0);">Projects</a></li>
-          <li><a href="javascript:void(0);">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="javascript:void(0);">Contact</a></li>
         </ul>
       </nav>
@@ -59,7 +70,7 @@
       </div>
     </section>
 
-    <h1 class="display-1 text-center" data-scroll-section>The Anatomy of my Job</h1>
+    <h1 class="display-1 text-center" data-scroll-section>The Anatomy of My Job</h1>
     <section class="methodology" data-scroll-section>
 
       <div class="step-item">
@@ -121,54 +132,34 @@
 
     <h1 class="display-1 text-center" data-scroll-section>Domain of Works</h1>
     <section class="domains" data-scroll-section>
-      <div class="domain-item">
-        <div class="domain-item-graphic">
-          <i class="ti-server"></i>
-        </div>
-        <div class="domain-item-title">
-          <h2>
-            SAAS
-          </h2>
+      <div class="card">
+        <div class="circle"><i class="ti-server"></i></div>
+        <div class="info">
+          <h2>SASS</h2>
         </div>
       </div>
-      <div class="domain-item">
-        <div class="domain-item-graphic">
-          <i class="ti-shopping-cart-full"></i>
-        </div>
-        <div class="domain-item-title">
-          <h2>
-            E-Commerce
-          </h2>
+      <div class="card">
+        <div class="circle"><i class="ti-shopping-cart-full"></i></div>
+        <div class="info">
+          <h2>E-Comm</h2>
         </div>
       </div>
-      <div class="domain-item">
-        <div class="domain-item-graphic">
-          <i class="ti-heart"></i>
-        </div>
-        <div class="domain-item-title">
-          <h2>
-            Healthcare
-          </h2>
+      <div class="card">
+        <div class="circle"><i class="ti-heart"></i></div>
+        <div class="info">
+          <h2>Health</h2>
         </div>
       </div>
-      <div class="domain-item">
-        <div class="domain-item-graphic">
-          <i class="ti-thumb-up"></i>
-        </div>
-        <div class="domain-item-title">
-          <h2>
-            Social
-          </h2>
+      <div class="card">
+        <div class="circle"><i class="ti-thumb-up"></i></div>
+        <div class="info">
+          <h2>Social</h2>
         </div>
       </div>
-      <div class="domain-item">
-        <div class="domain-item-graphic">
-          <i class="ti-headphone"></i>
-        </div>
-        <div class="domain-item-title">
-          <h2>
-            Travel and Music
-          </h2>
+      <div class="card">
+        <div class="circle"><i class="ti-headphone"></i></div>
+        <div class="info">
+          <h2>Leisure</h2>
         </div>
       </div>
     </section>
@@ -188,7 +179,7 @@
       <nav>
         <ul class="navigation-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="/">Projects</a></li>
           <li><a href="/">Contact</a></li>
         </ul>
